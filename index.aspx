@@ -56,9 +56,15 @@
 		<td rowspan="2" style=" background-image: url(images/bj.png);">
 			<form class="indexLogin">
 
+<<<<<<< HEAD
     <input type="text" id="name" name="name"required ="required " placeholder="用户名"class="indexLogin_input indexLogin_input_mag "autofocus ="autofocus " /><br />
     <input type="password"id="password"  name="password"required ="required " title="密码" placeholder="密码"class="indexLogin_input" />
         <input type="submit" value="登录" id="go" name="go" title="登录"class="indexLogin_input indexLogin_input_go" />
+=======
+    <input id="name" type="text" name="name"title="用户名"required ="required " placeholder="用户名"class="indexLogin_input indexLogin_input_mag "autofocus ="autofocus " /><br />
+    <input id="password" type="password" name="password"required ="required " title="密码" placeholder="密码"class="indexLogin_input" />
+        <input type="submit" value="登录" title="登录"class="indexLogin_input indexLogin_input_go" />
+>>>>>>> origin/master
     </form>
 			</td>
 		<td>
