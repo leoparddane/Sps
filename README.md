@@ -1,2 +1,0 @@
-# Sps
-SchoolroomPatrolSystem(Sps)
