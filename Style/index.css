@@ -3,11 +3,50 @@
     padding:0px;
     border:0px;
 }
-
-.indexTable{
+img {
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+body {
+    background-color:#FFFFFF;
+    width:1024px;
+    height:760px;
     margin: 0 auto;
-    _margin-left:160px;
-    *#margin-left:160px;
+}
+.header {
+    width:1024px;
+    height:294px;
+}
+.main {
+    width:1024px;
+    height:337px;
+}
+.indexTopleft{
+    width:552px;
+    height:294px;
+	float: left;
+}
+.indexTopReight{
+    width:472px;
+    height:294px;
+	float: left;
+}
+.indexLeft{
+    width:552px;
+    height:337px;
+	float: left;
+}
+.indexReight{
+	float: left;
+	background-image: url(../img/indexReight.gif);
+    width:472px;
+    height:337px;
+}
+.footer{
+    width:1024px;
+    height:137px;
+    background-image: url(../img/indexFooter.gif);
 }
 /*登录框*/
 .indexLogin {
