@@ -51,7 +51,7 @@ body {
 /*登录框*/
 .indexLogin {
     width:370px;
-    height:300px;
+    height:320px;
     background-color:#d8edf7;
     border-radius:10px;
     margin: 0 auto;
@@ -65,16 +65,20 @@ body {
     font-size: 25px;
     padding-left:10px;
     line-height: 50px;
+    margin-top:5px;
 } 
 /*登录框里的用户input样式*/
 .indexLogin_input_mag {
-    margin-top:25px;
-    margin-bottom:10px;
+    margin-top:20px;
 } 
 /*登录框里的登录样式*/
 .indexLogin_input_go {
     background-color:#4fbbff;
-    margin-top:30px;
+    margin-top:20px;
     color:#fff;
     font-size:25px;
-} 
+}
+.text {
+    float:left;
+    color:red;
+}

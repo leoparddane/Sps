@@ -6,14 +6,25 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="Style/Master.css" rel="stylesheet" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        <header id="header">
-            <nav id="nav"></nav>
-        </header>
+        <div id="header">
+            <div id="navtext">
+                    课堂巡视系统
+            </div>
+            <div id="nav">
+                <%--巡视--%>
+                <div id="nav-patrol"><a href="#">巡视</a></div>
+                <%--修改密码--%>
+                <div id="nav-password"><a href="#">修改密码</a></div>
+                <%--欢迎您  liabel1控件是用户名--%>
+                <div id="nav-right">欢迎您:<asp:Label ID="name" runat="server" Text="Label"></asp:Label>  <a href="#">[退出]</a></div>
+            </div>
+        </div>
         <div id="main">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         

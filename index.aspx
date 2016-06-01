@@ -24,25 +24,28 @@
             //$("name").focus(function () {
             //    $("#name").text(" ");
             //});
-            document.getElementById("login").onclick = function () {
-                var nameV = document.getElementById("name").value;
-                var password = $("#password").val();
-                var nameA = $.trim(nameV);
-                var pwd = $.trim(password);
-                if (nameA.length > 0) {
+        //    document.getElementById("login").OnClientClick = function () {
+        //        var nameV = document.getElementById("name").value;
+        //        var password = $("#password").val();
+        //        var nameA = $.trim(nameV);
+        //        var pwd = $.trim(password);
+        //        var text = $("#text").text();
+        //        if (nameA.length > 0) {
                     
-                }
-                else {
-                    alert("请输入用户名！！！"); 
-                }
-                if (pwd.length > 0) {
+        //        }
+        //        else {
+        //            alert("请输入用户名！！！");
+        //            $("#text").text("请输入用户名！！！");
+        //        }
+        //        if (pwd.length > 0) {
                     
-                }
-                else {
-                    alert("请输入密码！！！");
-                }
-            }
-        }
+        //        }
+        //        else {
+        //            alert("请输入密码！！！");
+        //            $("#text").text("请输入密码！！！");
+        //        }
+        //    }
+        //}
     </script>
 
 </head>
@@ -67,14 +70,21 @@
             -->
 	 <form id="form2" runat="server" class="indexLogin">
          <asp:TextBox ID="name" CssClass="indexLogin_input indexLogin_input_mag" runat="server"></asp:TextBox>
-          <asp:TextBox ID="password" CssClass="indexLogin_input" TextMode="Password" runat="server"></asp:TextBox>            
-         <asp:Button ID="login" runat="server" Text="登录" CssClass="indexLogin_input indexLogin_input_go" />
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+            ErrorMessage="用户名不能为空！" ControlToValidate="name" CssClass="text"></asp:RequiredFieldValidator>
 
-    </form>
+          <asp:TextBox ID="password" CssClass="indexLogin_input" TextMode="Password" runat="server"></asp:TextBox>
+         
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+            ErrorMessage="密码不能为空！" ControlToValidate="password" CssClass="text"></asp:RequiredFieldValidator>
+              
+         <asp:Button ID="login" runat="server" Text="登录" CssClass="indexLogin_input indexLogin_input_go" />
+         <br />
+         
+          </form>
 	</div>	
             </div>
-    <script>
-    </script>
+  
         <div class="footer"></div>
 </body>
 </html>

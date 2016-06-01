@@ -1,0 +1,51 @@
+﻿* {
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+body {
+}
+#header {
+    width:100%;
+    height:80px;
+    text-align:center;
+    color:white;
+    background-color:#00aeef;
+}
+#navtext {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight:bold;
+}
+#nav-patrol {
+    float:left;
+    width:80px;
+    height:30px;
+    line-height:30px;
+    background-color:#00ffea;
+    border-radius:10px 10px 0 0;
+}
+#nav-password {
+    border-radius:10px 10px 0 0;
+    float:left;
+    width:80px;
+    height:30px;
+    line-height:30px;
+    background-color:#ffcaca;
+}
+#nav a {
+    color:#fff;
+    text-decoration:none;
+}
+#nav-right {
+    width:200px;
+    float:right;
+}
+#nav-right > a {
+    font-size:10px;
+    color:red;
+}
