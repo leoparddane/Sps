@@ -10,7 +10,13 @@
     <script src="Js/jquery-1.12.3.min.js"></script>
     <script src="Js/index.js"></script>
     <script>
-        window.onload = function () {
+        //window.onload = function () {
+           
+        //}
+        //function pswname() {
+        //    document.getElementById("pswname").style.display = "block";
+        //}
+
             //$(function () {
             //    $("#name,#password").focus(function () {
             //        $("#name").val("");
@@ -80,6 +86,7 @@
               
          <asp:Button ID="login" runat="server" Text="登录" CssClass="indexLogin_input indexLogin_input_go" OnClick="login_Click" />
          <br />
+         <asp:Label ID="pswname" runat="server" Text="用户名或密码错误！！！" style="display:none; color:red;"></asp:Label>
          
           </form>
 	</div>	
