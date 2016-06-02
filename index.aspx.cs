@@ -11,4 +11,14 @@ public partial class index : System.Web.UI.Page
     {
 
     }
+    protected void login_Click(object sender, EventArgs e)
+    {
+        User u = new User();
+        if (u.isPasswordCorrectByUsername(name.Text.Trim(), password.Text.Trim()))
+        {
+            Session["username"]=name.Text.Trim();
+            Response.Redirect("node/index.aspx");
+        }
+
+    }
 }

@@ -18,13 +18,26 @@ public class User
     public string encryption(string password)
     {
         //加密
+       // System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(password, "MD5");
         return password;
     }
 
-    public string decrypt(string password)
+    public bool isPasswordCorrectByUserID(int id, string password)
     {
-        //解密
-        return password;
+        bool result=false;
+       // if (encryption(password) == getUserPasswordByID(id))
+        if (password == getUserPasswordByID(id))
+            result = true;
+        return result;
+    }
+
+    public bool isPasswordCorrectByUsername(string username, string password)
+    {
+        bool result = false;
+        // if (encryption(password) == getUserPasswordByID(id))
+        if (password == getUserPasswordByUsername(username))
+            result = true;
+        return result;
     }
 
     public bool insertUser(string username,string realname,string passsword,int department,int power)
@@ -132,6 +145,43 @@ public class User
             string realname = r[0].ToString();
             con.Close();
             return realname;
+        }
+        con.Close();
+        return "";
+    }
+
+    public string getUserPasswordByID(int id)
+    {
+        String strCon = ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ToString();
+        MySqlConnection con = new MySqlConnection(strCon);
+        string strCmd = "select password from user where id=" + id;
+        con.Open();
+        MySqlCommand cmd = new MySqlCommand(strCmd, con);
+        MySqlDataReader r = cmd.ExecuteReader();
+        if (r.Read())
+        {
+            string password = r[0].ToString();
+            con.Close();
+            return password;
+        }
+        con.Close();
+        return "";
+    }
+
+    public string getUserPasswordByUsername(string username)
+    {
+        String strCon = ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ToString();
+        MySqlConnection con = new MySqlConnection(strCon);
+        string strCmd = "select password from user where username='" + username + "'";
+        con.Open();
+        MySqlCommand cmd = new MySqlCommand(strCmd, con);
+        MySqlDataReader r = cmd.ExecuteReader();
+       
+        if (r.Read())
+        {
+            string password = r[0].ToString();
+            con.Close();
+            return password;
         }
         con.Close();
         return "";
@@ -404,7 +454,7 @@ public class User
         con.Close();//关闭连接
         return retu;
     }
-    //delete from employee where lastname = 'May';
+   
     public bool removeUserByID(int id)
     {
 

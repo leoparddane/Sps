@@ -78,7 +78,7 @@
           <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
             ErrorMessage="密码不能为空！" ControlToValidate="password" CssClass="text"></asp:RequiredFieldValidator>
               
-         <asp:Button ID="login" runat="server" Text="登录" CssClass="indexLogin_input indexLogin_input_go" />
+         <asp:Button ID="login" runat="server" Text="登录" CssClass="indexLogin_input indexLogin_input_go" OnClick="login_Click" />
          <br />
          
           </form>
