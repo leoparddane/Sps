@@ -18,25 +18,29 @@ public class User
     public string encryption(string password)
     {
         //加密
-       // System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(password, "MD5");
+        password=System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(password, "MD5");
         return password;
     }
 
     public bool isPasswordCorrectByUserID(int id, string password)
     {
         bool result=false;
-       // if (encryption(password) == getUserPasswordByID(id))
-        if (password == getUserPasswordByID(id))
+        if (encryption(password) == getUserPasswordByID(id))
+        {
+            //if (password == getUserPasswordByID(id))
             result = true;
+        }
         return result;
     }
 
     public bool isPasswordCorrectByUsername(string username, string password)
     {
         bool result = false;
-        // if (encryption(password) == getUserPasswordByID(id))
-        if (password == getUserPasswordByUsername(username))
+        if (encryption(password).ToUpper() == getUserPasswordByUsername(username).ToUpper())
+        {
+            //if (password == getUserPasswordByUsername(username))
             result = true;
+        }
         return result;
     }
 
@@ -152,6 +156,7 @@ public class User
 
     public string getUserPasswordByID(int id)
     {
+        string password = "";
         String strCon = ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ToString();
         MySqlConnection con = new MySqlConnection(strCon);
         string strCmd = "select password from user where id=" + id;
@@ -160,16 +165,17 @@ public class User
         MySqlDataReader r = cmd.ExecuteReader();
         if (r.Read())
         {
-            string password = r[0].ToString();
+            password = r[0].ToString();
             con.Close();
             return password;
         }
         con.Close();
-        return "";
+        return password;
     }
 
     public string getUserPasswordByUsername(string username)
     {
+        string password = "";
         String strCon = ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ToString();
         MySqlConnection con = new MySqlConnection(strCon);
         string strCmd = "select password from user where username='" + username + "'";
@@ -179,12 +185,12 @@ public class User
        
         if (r.Read())
         {
-            string password = r[0].ToString();
+            password = r[0].ToString();
             con.Close();
             return password;
         }
         con.Close();
-        return "";
+        return password;
     }
 
     public int getUserDepartmentIDByUserID(int id)
