@@ -2,18 +2,42 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+using System.Configuration;
 
 /// <summary>
-/// Common 的摘要说明
+/// 常用功能，添加记录、删除记录等
 /// </summary>
 public class Common
 {
+    String strCon = ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ToString();
+ 
 	public Common()
 	{
-		//
-		// TODO: 在此处添加构造函数逻辑
-		//
 	}
 
+    public bool createRecord(string username)
+    {
+        bool result=false;
+        MySqlConnection con = new MySqlConnection(strCon);
+        string strCmd = "insert into smsapply(username,class,time,info,state,weeek,day,timeDuring,number) values(@username,@class,@time,@info,@state,@weeek,@day,@timeDuring,@number)";
+        MySqlCommand cmd = new MySqlCommand(strCmd, con);
+        MySqlParameter valueusername = new MySqlParameter("@username", MySqlDbType.VarChar);
+        valueusername.Value = username;
+        cmd.Parameters.Add(valueusername);
 
+        if (cmd.ExecuteNonQuery()>0)
+            result = true;
+        con.Open();
+        con.Close();
+        return result;
+    }
+
+    public bool deleteRecordByID()
+    {
+        bool result = false;
+
+        return result;
+    }
 }
