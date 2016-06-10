@@ -11,16 +11,16 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
         <div id="header">
             <div id="navtext">
                     课堂巡视系统
             </div>
             <div id="nav">
                 <%--巡视--%>
-                <div id="nav-patrol"><a href="#">巡视</a></div>
+                <div id="nav-patrol"><a href="../node/index.aspx">巡视</a></div>
                 <%--修改密码--%>
-                <div id="nav-password"><a href="#">修改密码</a></div>
+                <div id="nav-password"><a href="../node/password.aspx">修改密码</a></div>
                 <%--欢迎您  liabel1控件是用户名--%>
                 <div id="nav-right">欢迎您:<asp:Label ID="name" runat="server" Text="Label"></asp:Label>  <a href="#">[退出]</a></div>
             </div>
@@ -30,6 +30,6 @@
         
         </asp:ContentPlaceHolder>
     </div>
-    </form>
+ 
 </body>
 </html>
