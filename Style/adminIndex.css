@@ -1,0 +1,35 @@
+﻿body {
+    background-color:#f9f9f9;
+     background-image:url(../img/index.png);
+}
+.container {
+    width:400px;
+    background-color:#fff;
+    border:1px solid #d8dee2;
+    border-radius:10px;
+}
+.bodybox{
+    width: 330px;
+    height: 267px;
+    margin: 0 auto;
+}
+.form-signin-heading{
+    font-weight:bold;
+}
+
+.onld{
+    width: 100%;
+    height:300px;
+    position: absolute;
+    left: 0;
+    top:-270px;
+	z-index:10;
+}
+
+
+
+.only {
+    width:70px;
+    height: 15px;
+    line-height:15px;
+}
