@@ -21,6 +21,8 @@
                 <div id="nav-patrol"><a href="../node/index.aspx">巡视</a></div>
                 <%--修改密码--%>
                 <div id="nav-password"><a href="../node/password.aspx">修改密码</a></div>
+                <%--巡视--%>
+                <div id="nav-cmd"><a href="../node/cmd.aspx">巡视</a></div>
                 <%--欢迎您  liabel1控件是用户名--%>
                 <div id="nav-right">欢迎您:<asp:Label ID="name" runat="server" Text="Label"></asp:Label>  <a href="#">[退出]</a></div>
             </div>

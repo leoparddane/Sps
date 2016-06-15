@@ -76,7 +76,7 @@
             <br />
             <asp:TextBox ID="TextBox1" runat="server" TextMode="MultiLine" CssClass="textBox"></asp:TextBox>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="保存提交" CssClass="btn" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="保存提交" CssClass="btn1" OnClick="Button1_Click" />
         </div>
     </div>
         </form>

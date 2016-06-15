@@ -1,0 +1,33 @@
+﻿body {
+}
+/*--条件--*/
+.conditions {
+    width:800px;
+    margin-top:20px;
+}
+.date {
+    width:200px;
+    display:inline;
+}
+.userName {
+}
+.box {
+     width:200px;
+    height:34px;
+    padding-left:6px;
+    border-radius:5px;
+}
+.button {
+    width:100px;
+    height:34px;
+        background-color:#00aeef;
+        float:right;
+        border:0px;
+        color:#fff;
+        margin-left:10px;
+        border-radius:3px;
+}
+.gridView {
+    margin-top:20px;
+    width:800px;
+}

@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminMasterPage.master.cs" Inherits="admin_adminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../Style/Master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+        <div id="header">
+            <div id="navtext">
+                    课堂巡视系统后台
+            </div>
+            <div id="nav">
+                <%--巡视信息查询--%>
+                <div class="nav2"><a href="../admin/demand.aspx">巡视信息查询</a></div>
+                <%--注册用户--%>
+                <div class="nav1"><a href="../admin/addUser.aspx">注册用户</a></div>
+                <%--查询删除用户--%>
+                <div class="nav2"><a href="../admin/funUser.aspx">查询删除用户</a></div>
+                <%--修改用户信息--%>
+                <div class="nav1"><a href="../admin/amendUser.aspx">修改用户信息</a></div>
+                <%--欢迎您  liabel1控件是用户名--%>
+                <div id="nav-right">欢迎您:<asp:Label ID="name" runat="server" Text="Label"></asp:Label>  <a href="#">[退出]</a></div>
+            </div>
+        </div>
+        <div id="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+</body>
+</html>

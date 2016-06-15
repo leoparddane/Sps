@@ -1,0 +1,33 @@
+﻿body {
+}
+table {
+    width:450px;
+    margin:20px auto;
+}
+.thead {
+    height:40px;
+    text-align:center;
+}
+.tdOne {
+    text-align:right;
+    width:100px;
+    height:30px;
+}
+.tdTwo {
+    width:190px;
+}
+.tdS {
+    width:150px;
+}
+/*控件通用样式*/
+.repeat {
+    width:170px;
+    height:25px;
+    border:1px solid #ccc;
+    padding:0px 0px 0px 5px;
+    border-radius:3px;
+}
+.button {
+    color:white;
+    background-color:#00aeef;
+}

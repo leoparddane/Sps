@@ -1,7 +1,6 @@
 ﻿* {
     margin:0px;
     padding:0px;
-    border:0px;
 }
 body {
 }
@@ -29,6 +28,14 @@ body {
     background-color:#00ffea;
     border-radius:10px 10px 0 0;
 }
+#nav-cmd {
+    float:left;
+    width:80px;
+    height:30px;
+    line-height:30px;
+    background-color:#00ffea;
+    border-radius:10px 10px 0 0;
+}
 #nav-password {
     border-radius:10px 10px 0 0;
     float:left;
@@ -48,4 +55,24 @@ body {
 #nav-right > a {
     font-size:10px;
     color:red;
+}
+
+
+
+/*admin/**/
+.nav1 {
+    float:left;
+    width:90px;
+    height:30px;
+    line-height:30px;
+    background-color:#00ffea;
+    border-radius:10px 10px 0 0;
+}
+.nav2{
+    border-radius:10px 10px 0 0;
+    float:left;
+    width:90px;
+    height:30px;
+    line-height:30px;
+    background-color:#ffcaca;
 }
