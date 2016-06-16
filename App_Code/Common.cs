@@ -34,10 +34,20 @@ public class Common
         return result;
     }
 
-    public bool deleteRecordByID()
+    public bool deleteRecordByID(int idValue)
     {
         bool result = false;
+        MySqlConnection con = new MySqlConnection(strCon);
+        string strCmd = "delete from smsapply where id=@id";
+        MySqlCommand cmd = new MySqlCommand(strCmd, con);
+        MySqlParameter id = new MySqlParameter("@id", MySqlDbType.Int32);
+        id.Value = idValue;
+        cmd.Parameters.Add(id);
 
+        if (cmd.ExecuteNonQuery() > 0)
+            result = true;
+        con.Open();
+        con.Close();
         return result;
     }
 }

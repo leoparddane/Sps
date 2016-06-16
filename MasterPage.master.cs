@@ -9,6 +9,10 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["username"] == null)
+        {
+            Response.Redirect("~/404.html");   
+        }
+        name.Text=Session["username"].ToString();
     }
 }
