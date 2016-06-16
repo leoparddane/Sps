@@ -25,10 +25,8 @@
                 <div id="nav-cmd"><a href="../node/cmd.aspx">巡视</a></div>
                 <%--欢迎您  liabel1控件是用户名--%>
                 <div id="nav-right">欢迎您:<asp:Label ID="name" runat="server" Text="Label"></asp:Label> 
-                 
-                      <asp:Button ID="out" runat="server" Text="[退出]" />
-                   
-                 <a href="404.html" onclick="Session['usernma']=null;">[退出]</a></div>
+                      <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">[退出]</asp:LinkButton>
+                 </div>
             </div>
         </div>
         <div id="main">

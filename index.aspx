@@ -9,11 +9,6 @@
 <link href="Style/index.css" rel="stylesheet" />
     <script src="Js/jquery-1.12.3.min.js"></script>
     <script src="Js/index.js"></script>
-<<<<<<< HEAD
-    <script>
-    </script>
-=======
->>>>>>> origin/master
 
 </head>
     <body>

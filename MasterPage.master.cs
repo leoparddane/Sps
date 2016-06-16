@@ -15,4 +15,9 @@ public partial class MasterPage : System.Web.UI.MasterPage
         }
         name.Text=Session["username"].ToString();
     }
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+        Session["username"] = null;
+        Response.Redirect("~/index.aspx");   
+    }
 }
