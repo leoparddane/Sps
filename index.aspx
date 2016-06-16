@@ -10,48 +10,6 @@
     <script src="Js/jquery-1.12.3.min.js"></script>
     <script src="Js/index.js"></script>
     <script>
-        //window.onload = function () {
-           
-        //}
-        //function pswname() {
-        //    document.getElementById("pswname").style.display = "block";
-        //}
-
-            //$(function () {
-            //    $("#name,#password").focus(function () {
-            //        $("#name").val("");
-            //        $("#password").val("");
-            //    });
-            //    $("#name,#password").blur(function () {
-            //        $("#name").val("请输入用户名！！");
-            //        $("#password").val("请输入密码！！");
-            //    });
-            //});
-            //$("name").focus(function () {
-            //    $("#name").text(" ");
-            //});
-        //    document.getElementById("login").OnClientClick = function () {
-        //        var nameV = document.getElementById("name").value;
-        //        var password = $("#password").val();
-        //        var nameA = $.trim(nameV);
-        //        var pwd = $.trim(password);
-        //        var text = $("#text").text();
-        //        if (nameA.length > 0) {
-                    
-        //        }
-        //        else {
-        //            alert("请输入用户名！！！");
-        //            $("#text").text("请输入用户名！！！");
-        //        }
-        //        if (pwd.length > 0) {
-                    
-        //        }
-        //        else {
-        //            alert("请输入密码！！！");
-        //            $("#text").text("请输入密码！！！");
-        //        }
-        //    }
-        //}
     </script>
 
 </head>
@@ -87,6 +45,8 @@
          <asp:Button ID="login" runat="server" Text="登录" CssClass="indexLogin_input indexLogin_input_go" OnClick="login_Click" />
          <br />
          <asp:Label ID="pswname" runat="server" Text="用户名或密码错误！！！" style="display:none; color:red;"></asp:Label>
+         <br />
+         <a href="admin/adminIndex.aspx" class="goadmin">管理员登陆</a>
          
           </form>
 	</div>	
