@@ -9,50 +9,6 @@
 <link href="Style/index.css" rel="stylesheet" />
     <script src="Js/jquery-1.12.3.min.js"></script>
     <script src="Js/index.js"></script>
-    <script>
-        //window.onload = function () {
-           
-        //}
-        //function pswname() {
-        //    document.getElementById("pswname").style.display = "block";
-        //}
-
-            //$(function () {
-            //    $("#name,#password").focus(function () {
-            //        $("#name").val("");
-            //        $("#password").val("");
-            //    });
-            //    $("#name,#password").blur(function () {
-            //        $("#name").val("请输入用户名！！");
-            //        $("#password").val("请输入密码！！");
-            //    });
-            //});
-            //$("name").focus(function () {
-            //    $("#name").text(" ");
-            //});
-        //    document.getElementById("login").OnClientClick = function () {
-        //        var nameV = document.getElementById("name").value;
-        //        var password = $("#password").val();
-        //        var nameA = $.trim(nameV);
-        //        var pwd = $.trim(password);
-        //        var text = $("#text").text();
-        //        if (nameA.length > 0) {
-                    
-        //        }
-        //        else {
-        //            alert("请输入用户名！！！");
-        //            $("#text").text("请输入用户名！！！");
-        //        }
-        //        if (pwd.length > 0) {
-                    
-        //        }
-        //        else {
-        //            alert("请输入密码！！！");
-        //            $("#text").text("请输入密码！！！");
-        //        }
-        //    }
-        //}
-    </script>
 
 </head>
     <body>

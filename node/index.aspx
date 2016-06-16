@@ -36,7 +36,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <form  runat="server">
+    
     <div id="body">
         <div name="header" class="header">电信工程系任课教师值班记载表</div>
         <%--时间--%>
@@ -79,6 +79,6 @@
             <asp:Button ID="Button1" runat="server" Text="保存提交" CssClass="btn1" OnClick="Button1_Click" />
         </div>
     </div>
-        </form>
+       
 </asp:Content>
 

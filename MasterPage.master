@@ -11,7 +11,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    
+     <form  runat="server">
         <div id="header">
             <div id="navtext">
                     课堂巡视系统
@@ -24,7 +24,11 @@
                 <%--巡视--%>
                 <div id="nav-cmd"><a href="../node/cmd.aspx">巡视</a></div>
                 <%--欢迎您  liabel1控件是用户名--%>
-                <div id="nav-right">欢迎您:<asp:Label ID="name" runat="server" Text="Label"></asp:Label>  <a href="#">[退出]</a></div>
+                <div id="nav-right">欢迎您:<asp:Label ID="name" runat="server" Text="Label"></asp:Label> 
+                 
+                      <asp:Button ID="out" runat="server" Text="[退出]" />
+                   
+                 <a href="404.html" onclick="Session['usernma']=null;">[退出]</a></div>
             </div>
         </div>
         <div id="main">
@@ -32,6 +36,6 @@
         
         </asp:ContentPlaceHolder>
     </div>
- 
+  </form> 
 </body>
 </html>

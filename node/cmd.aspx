@@ -12,7 +12,7 @@
     <link href="../Style/cmd.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <form id="Form1"  runat="server">
+   
     <div id="body">
         <div class="conditions "><%--条件--%>
             日期：
@@ -42,7 +42,7 @@
             </asp:GridView>
             </div>
         </div>
-        </form>
+        
      <script type="text/javascript">
          $(document).ready(function () {
              $('#config-demo22').daterangepicker();

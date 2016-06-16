@@ -11,7 +11,7 @@
             	时间：2016-05-29
             	描述：下面是修改框
             -->
-	 <form id="form2" runat="server" class="indexLogin">
+	 <div id="form2" runat="server" class="indexLogin">
          旧密码:<asp:Label ID="lopsw" runat="server" Text="旧密码错误！！！" style="display:none; color:red;"></asp:Label><br />
           <asp:TextBox ID="password" CssClass="indexLogin_input" TextMode="Password" runat="server"></asp:TextBox>        
           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
@@ -33,7 +33,7 @@
          <asp:CompareValidator ID="CompareValidator2" ForeColor="Red" runat="server" ErrorMessage="两次密码输入不一致" ControlToValidate="password1" ControlToCompare="password2"></asp:CompareValidator> 
          <asp:Label ID="pswname" runat="server" Text="密码修改成功！！！" style="display:none; color:red;"></asp:Label>
          
-          </form>
+          </div>
 	</div>	
 </asp:Content>
 
