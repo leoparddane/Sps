@@ -12,7 +12,7 @@
             	描述：下面是修改框
             -->
 	 <div id="form2" runat="server" class="indexLogin">
-         旧密码:<asp:Label ID="lopsw" runat="server" Text="旧密码错误！！！" style="display:none; color:red;"></asp:Label><br />
+         旧密码:<br />
           <asp:TextBox ID="password" CssClass="indexLogin_input" TextMode="Password" runat="server"></asp:TextBox>        
           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
             ErrorMessage="请输入旧密码！" ControlToValidate="password" CssClass="text"></asp:RequiredFieldValidator> 
@@ -27,11 +27,11 @@
           <asp:TextBox ID="password2" CssClass="indexLogin_input" TextMode="Password" runat="server"></asp:TextBox> 
           <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
             ErrorMessage="请确认新密码！" ControlToValidate="password" CssClass="text"></asp:RequiredFieldValidator>
-              
+              <asp:Label ID="lopsw" runat="server" Text="旧密码错误！！！" style="display:none; color:red;"></asp:Label>
          <asp:Button ID="login" runat="server" Text="保存" CssClass="indexLogin_input indexLogin_input_go" OnClick="login_Click" />
          <br />
          <asp:CompareValidator ID="CompareValidator2" ForeColor="Red" runat="server" ErrorMessage="两次密码输入不一致" ControlToValidate="password1" ControlToCompare="password2"></asp:CompareValidator> 
-         <asp:Label ID="pswname" runat="server" Text="密码修改成功！！！" style="display:none; color:red;"></asp:Label>
+         <asp:Label ID="pswname" onclick="alert('asdf');" runat="server" Text="密码修改成功！！！" style="display:none; color:red;" ></asp:Label>
          
           </div>
 	</div>	
